@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unique Kindergarten Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0; background-color: #fef6f0; color: #333;
+    }
+    header {
+      background-color: #ffb347;
+      text-align: center;
+      padding: 20px 10px;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      background-color: #ff7043;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #ff5722;
+    }
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h2 {
+      color: #ff7043;
+      border-bottom: 3px solid #ffb347;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+      background: white;
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ffb347;
+      text-align: center;
+      padding: 15px 0;
+      color: white;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Unique Kindergarten Photo Gallery</header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Welcome to Unique Kindergarten</h2>
+      <p>Explore moments and memories from our activities and events.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="gallery-item">
+        <img src="images/photo1.jpg" alt="Students group photo 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo2.jpg" alt="Students group photo 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo3.jpg" alt="Students group photo 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo4.jpg" alt="Students group photo 4" />
+      </div>
+    </section>
+  </main>
+  <footer>&copy; 2025 Unique Kindergarten. All rights reserved.</footer>
+</body>
+</html>
